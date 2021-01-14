@@ -10,43 +10,43 @@ class StatsServiceTest {
     void sumMonth() {
         StatsService service=new StatsService();
         long expected=180;
-        long actual=service.SumMonth(sales);
+        long actual=service.sumMonth(sales);
         assertEquals(expected, actual);
     }
 
     @Test
-    void AverageSales() {
+    void averageSales() {
         StatsService service=new StatsService();
         long expected=15;
-        long actual=service.AverageSales(sales);
+        long actual=service.averageSales(sales);
         assertEquals(expected, actual);
     }
     @Test
-    void maximumsaleamount() {
+    void maximumSaleAmount() {
         StatsService service=new StatsService();
         long expected=8;
-        long actual=service.maximumsaleamount(sales);
+        long actual=service.maximumSaleAmount(sales);
         assertEquals(expected, actual);
     }
     @Test
-    void minsaleamount() {
+    void minSaleAmount() {
         StatsService service=new StatsService();
         long expected=9;
-        long actual=service.minsaleamount(sales);
+        long actual=service.minSaleAmount(sales);
         assertEquals(expected, actual);
     }
     @Test
-    void MonthsWhenSalesWereBelowAverage() {
+    void monthsWhenSalesWerebeLowAverage() {
         StatsService service=new StatsService();
         long expected=5;
-        long actual=service.MonthsWhenSalesWereBelowAverage(sales);
+        long actual=service.monthWhenSalesWerebeLowAverage(sales);
         assertEquals(expected, actual);
     }
     @Test
-    void MonthsWhenSalesWereAverage() {
+    void monthsWhenSalesWereAverage() {
         StatsService service=new StatsService();
         long expected=5;
-        long actual=service.MonthsWhenSalesWereAverage(sales);
+        long actual=service.monthsWhenSalesWereAverage(sales);
         assertEquals(expected, actual);
     }
 }
